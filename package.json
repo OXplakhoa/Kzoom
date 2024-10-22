@@ -1,0 +1,24 @@
+{
+  "name": "kzoom",
+  "version": "1.0.0",
+  "keywords": [],
+  "license": "MIT",
+  "description": "Zoom Clone using WebRTC and Websockets",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/node": "^7.25.7",
+    "@babel/preset-env": "^7.25.8",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.5.1",
+    "express": "^4.21.1",
+    "pug": "^3.0.3",
+    "socket.io": "^4.8.0",
+    "ws": "^8.18.0"
+  }
+}
