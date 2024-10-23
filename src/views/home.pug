@@ -10,19 +10,17 @@ html(lang="en")
         header
             h1 Kzoom
         main 
-            div#welcome 
-                form
-                    input#roomName(placeholder="Room Name",required, type="text")
-                    input#userName(placeholder="Username(Not Required)",type="text")
-                    button Enter Room
-                h4 Open Rooms: 
-                ul
+            div#welcome
+                form 
+                    input(type="text",required,placeholder="Room Name")
+                    button Enter room
+            div#call
+                div#myStream
+                    video#myFace(autoplay,playsinline,muted,width="400",height="400")
+                    button#mute Mute 
+                    button#camera Turn Camera Off 
+                    select#cameras
+                    video#peerFace(autoplay,playsinline, width="400", height="400")
 
-            div#room 
-                h3
-                ul
-                form#msg
-                    input(placeholder="Message",required, type="text")
-                    button Send
         script(src="/socket.io/socket.io.js")
         script(src="/js/app.js")
