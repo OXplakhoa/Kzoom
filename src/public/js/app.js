@@ -121,7 +121,6 @@ welcomeForm.addEventListener("submit",handleWelcomeSubmit);
 socket.on("welcome", async() => {
   myDataChannel = myPeerConnection.createDataChannel("chat");
   myDataChannel.addEventListener("message",console.log)
-  console.log("made data channel");
   const offer = await myPeerConnection.createOffer();
   myPeerConnection.setLocalDescription(offer);
   console.log("Send the offer")

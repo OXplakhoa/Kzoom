@@ -15,12 +15,19 @@ html(lang="en")
                     input(type="text",required,placeholder="Room Name")
                     button Enter room
             div#call
-                div#myStream
-                    video#myFace(autoplay,playsinline,muted,width="400",height="400")
-                    button#mute Mute 
-                    button#camera Turn Camera Off 
-                    select#cameras
-                    video#peerFace(autoplay,playsinline, width="400", height="400")
+                div#streams
+                    div#controllers 
+                        button#mute Mute 
+                        button#camera Turn Camera Off 
+                        select#cameras
+                    div#myStream
+                        video#myFace(autoplay,playsinline,muted,width="400",height="400")
+                div#chatRoom
+                    ul#chatBox 
+                    form#chatForm
+                        input(required,type="text",placeholder="Send Message");
+                        button Send
+
 
         script(src="/socket.io/socket.io.js")
         script(src="/js/app.js")
