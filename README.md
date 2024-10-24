@@ -15,10 +15,10 @@ This is my project for learning WebSocket, Socket.IO & WebRTC to make a real-tim
   npm i
   ```
 3. **Step 3**
-   It all sets! Now let run:
-   ```sh
-   npm run dev
-   ```
+  It all sets! Now let run:
+  ```sh
+  npm run dev
+  ```
    
    
   
