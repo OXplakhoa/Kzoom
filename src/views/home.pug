@@ -12,7 +12,8 @@ html(lang="en")
         main 
             div#welcome
                 form 
-                    input(type="text",required,placeholder="Room Name")
+                    input#roomName(type="text",required,placeholder="Room Name")
+                    input#nickName(type="text",required,placeholder="Your Name")
                     button Enter room
             div#call
                 div#streams
@@ -27,7 +28,5 @@ html(lang="en")
                     form#chatForm
                         input(required,type="text",placeholder="Send Message");
                         button Send
-
-
         script(src="/socket.io/socket.io.js")
         script(src="/js/app.js")
